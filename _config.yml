@@ -6,10 +6,10 @@ keywords: "Pineapple, Pineapple Pizza, Pineapple House"
 email: "nsunny0908@naver.com"
 linkedin: "https://www.linkedin.com/"
 twitter: "https://twitter.com/"
-github: "https://github.com/"
+github: "https://github.com/kimnamsun"
 
 # Site config
-baseurl: "kimnamsun"
+baseurl: ""
 highlighter: rouge
 sass:
   sass_dir: assets/scss
