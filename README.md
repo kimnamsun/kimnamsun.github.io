@@ -1,2 +1,4 @@
-
-커밋해보기
+## Kimnamsun
+------------------
+### Web Developer
+> Java, HTML, CSS, JavaScript, JQuery, Spring
