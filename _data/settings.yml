@@ -3,17 +3,17 @@
 
 title: KimNamsun
 logo: 
-author: 
+author: KimNamsun
 description: Developer
 email: kimnsunnie@gmail.com
 phone: +86 10 4504 9209  
-address: 
-copyright: Copyright &copy; 2020 Designed by [Themefisher](https://themefisher.com)
+github: github.com/kimnamsun
+copyright: 
 
 menu:
 - {name: About, link: '/about'}
 - {name: Portfolio, link: '/portfolio'}
-- {name: Contact, link: '/contact'}
+# - {name: Contact, link: '/contact'}
 
 
 #-------------------------------
@@ -24,7 +24,7 @@ menu:
 
 # NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
 
-google-analytics: # UA-XXXXXX-X
+# google-analytics: # UA-XXXXXX-X
 
 
 #-------------------------------
@@ -39,11 +39,11 @@ disqus-identifier: # Add your shortname for Disqus Comment. For example mr-brown
 hero:
   hero-title: Hi! I’m <br> Kimnamsun <br> Web Developer
 
-social:
-- {icon: "ti-facebook", link: "#"}
-- {icon: "ti-instagram", link: "#"}
-- {icon: "ti-dribbble", link: "#"}
-- {icon: "ti-twitter", link: "#"}
+# social:
+# - {icon: "ti-facebook", link: "#"}
+# - {icon: "ti-instagram", link: "#"}
+# - {icon: "ti-dribbble", link: "#"}
+# - {icon: "ti-twitter", link: "#"}
 
 
 #-------------------------------
@@ -104,13 +104,13 @@ work-process:
 
 skills-title: Skills
 skills:
-- {name: Java, color: '#fdb157', value: '90%'}
-- {name: Spring, color: '#9473e6', value: '80%'}
-- {name: javascript, color: '#bdecf6', value: '70%'}
-- {name: HTML/CSS, color: '#ffbcaa', value: '90%'}
-- {name: MySQL, color: '#ffbcaa', value: '80%'}
-- {name: Oracle, color: '#ffbcaa', value: '70%'}
-- {name: git, color: '#ffbcaa', value: '90%'}
+- {name: Java, color: '#fdb157'}
+- {name: Spring, color: '#9473e6'}
+- {name: javascript, color: '#bdecf6'}
+- {name: HTML/CSS, color: '#ffbcaa'}
+- {name: MySQL, color: '#ffbcaa'}
+- {name: Oracle, color: '#ffbcaa'}
+- {name: git, color: '#ffbcaa'}
 
 
 #-------------------------------
