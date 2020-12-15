@@ -166,7 +166,7 @@ experience:
 # Portfolio Home Section
 portfolio-home-items:
   - image : "assets/images/portfolio/item-1.png"
-    url: "#"
+    url: "https://github.com/kimnamsun/kimnamsun.github.io"
     
   - image : "assets/images/portfolio/item-2.png"
     url: "#"
