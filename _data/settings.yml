@@ -108,9 +108,9 @@ skills:
 - {name: Spring, color: '#9473e6'}
 - {name: javascript, color: '#bdecf6'}
 - {name: HTML/CSS, color: '#ffbcaa'}
-- {name: MySQL, color: '#ffbcaa'}
-- {name: Oracle, color: '#ffbcaa'}
-- {name: git, color: '#ffbcaa'}
+- {name: MySQL, color: '#31de5f'}
+- {name: Oracle, color: '#de313a'}
+- {name: git, color: '#f582bb'}
 
 
 #-------------------------------
