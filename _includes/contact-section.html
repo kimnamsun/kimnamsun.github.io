@@ -5,9 +5,6 @@
       <div class="col-12 text-center">
         <h2 class="section-title">{{ site.data.settings.contact-title }}</h2>
       </div>
-      <div class="col-lg-8 mx-auto">
-        <div class="bg-white rounded text-center p-5 shadow-down">
-          <h4 class="mb-80">Contact</h4>
           {% for work in site.data.settings.work-process %}
       <div class="col-lg-3 col-md-4 text-center hover-shadow pt-3">
         <img src="{{ work.icon | relative_url }}" class="mb-4" alt="icon">
@@ -15,8 +12,7 @@
         <p>{{ work.content | markdownify }}</p>
       </div>
       {% endfor %}
-        </div>
-      </div>
+       
     </div>
   </div>
 </section>

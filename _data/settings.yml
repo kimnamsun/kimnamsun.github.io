@@ -184,40 +184,38 @@ portfolio-home-items:
 # Portfolio Page
 portfolio-label:
 - {
-    title : "UI/UX Design",
-    type : "design"
+    title : "JSP/Servlet",
+    type : "JSP/Servlet"
   }
 - {
-    title : "BRANDING",
-    type : "branding"
+    title : "Spring",
+    type : "Spring"
   }
 - {
-    title : "ILLUSTRATION",
-    type : "illustration"
+    title : "React",
+    type : "React"
   }
 
 portfolio-items:
   - image : "assets/images/portfolio/item-1.png"
     url: "#"
     portfolio-type:
-     - type: "design"
-     - type: "illustration"
+     - type: "JSP/Servlet"
       
   - image : "assets/images/portfolio/item-2.png"
     url: "#"
     portfolio-type:
-      - type: "branding"
+      - type: "Spring"
       
   - image : "assets/images/portfolio/item-3.png"
     url: "#"
     portfolio-type:
-      - type: "illustration"
+      - type: "React"
       
   - image : "assets/images/portfolio/item-6.png"
     url: "#"
     portfolio-type:
       - type: "design"
-      - type: "branding"
       
   - image : "assets/images/portfolio/item-8.png"
     url: "#"
@@ -305,4 +303,4 @@ portfolio-items:
 # Contact Section
 
 contact-title: Contact Info
-contact-email: steve.fruits@email.com
+contact-email: kimnsunnie@gmail.com
