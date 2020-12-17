@@ -2,10 +2,10 @@
 layout: default
 modal-id: 2
 project-date: 2020.08.26 ~ 2020.10.23
-img1: 2/devices.jpg
-img2: 2/desktop.jpg
-img3: 2/mobile.jpg
-logo: 2/logo.png
+img1: devices.jpg
+img2: desktop.jpg
+img3: mobile.jpg
+logo: logo.png
 alt: image-alt
 client: github.com/kimnamsun/SpaceUs
 category: Java, Spring, Mybatis, JavaScript, jQuery, HTML/CSS, Oracle, git, AWS
