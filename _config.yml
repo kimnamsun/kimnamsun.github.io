@@ -39,14 +39,10 @@ footer:
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket
-    url: http://bitbucket.org/jekyll
+  - title: velog
+    url: https://velog.io/@nsunny0908
+  - title: notion
+    url: https://www.notion.so/namsun-Kim-3e32988d63aa4845b131edb4fd522b6a
   - title: github
     url: http://github.com/kimnamsun
 
