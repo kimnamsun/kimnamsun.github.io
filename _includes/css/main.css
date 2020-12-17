@@ -212,7 +212,7 @@ section.success {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba({{ site.color.primary }},.9);
+    background: rgba(24,188,156,.9);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -473,7 +473,7 @@ footer .footer-below {
 }
 
 .navbar-nav>.active>a {
-    background-color: #{{ site.color.primary }} !important;
+    background-color: #18BC9C !important;
     /* background-color: #{{ site.color.secondary-dark }} !important; */
 }
 
