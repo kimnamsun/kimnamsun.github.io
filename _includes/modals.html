@@ -29,25 +29,23 @@
                                 {% endif %} -->
                                 {% if post.project-date %}
                                     <li>Date:
-                                        <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
+                                        <strong><p>{{ post.project-date }}</p>
                                         </strong>
                                     </li>
                                     <br>
                                 {% endif %}
                                 {% if post.category %}
                                     <li>Skills:
-                                        <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
+                                        <strong><p>{{ post.category }}</p>
                                         </strong>
                                     </li>
                                     <br>
                                 {% endif %}
-                                {% if post.url %}
                                     <li>
                                         <strong><a href="{{ post.url }}">{{ post.url }}</a>
                                         </strong>
                                     </li>
                                     <br>
-                                {% endif %}
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                         </div>
