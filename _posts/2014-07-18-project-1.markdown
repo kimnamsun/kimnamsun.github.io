@@ -2,9 +2,10 @@
 layout: default
 modal-id: 1
 project-date: 2020.06.22 ~ 2020.07.17
-img1: cabin.png
-img2: cabin.png
-img3: cabin.png
+img1: 1/devices.jpg
+img2: 1/desktop.jpg
+img3: 1/mobile.jpg
+logo: 1/logo.png
 alt: image-alt
 client: github.com/kimnamsun/stocker
 category: Java, JavaScript, jQuery, JSP/Servlet, HTML/CSS, Oracle

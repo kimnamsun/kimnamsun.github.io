@@ -483,3 +483,11 @@ footer .footer-below {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 }
+
+.icon-holder {
+    text-align: center;
+}
+
+.skills-icon {
+    width: 100px;
+}
