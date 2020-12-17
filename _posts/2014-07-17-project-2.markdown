@@ -9,6 +9,7 @@ logo: logo.jpg
 alt: image-alt
 client: github.com/kimnamsun/SpaceUs
 category: Java, Spring, Mybatis, JavaScript, jQuery, HTML/CSS, Oracle, git, AWS
+category2: Spring
 description: 공간대여 웹사이트
 title: SpaceUs
 ---

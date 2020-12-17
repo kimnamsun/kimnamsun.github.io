@@ -6,6 +6,7 @@ img1: circus.png
 alt: image-alt
 client: wizinsta.com
 category: Java, Spring, Hibernate, JavaScript, jQuery, HTML/CSS, MySQL, git
+category2: Spring
 description: SNS 계정관리 사이트
 title: Wizinsta
 ---

@@ -9,6 +9,7 @@ logo: logo.png
 alt: image-alt
 client: github.com/kimnamsun/stocker
 category: Java, JavaScript, jQuery, JSP/Servlet, HTML/CSS, Oracle
+category2: JSP/Servlet
 description: 물류 ERP System
 title: STOCKer
 ---
