@@ -6,9 +6,8 @@ img1: cake.png
 img2: cake.png
 img3: cake.png
 alt: image-alt
-client: Start Bootstrap
+client: github.com/kimnamsun/SpaceUs
 category: Java, Spring, Mybatis, JavaScript, jQuery, HTML/CSS, Oracle, git, AWS
 description: 공간대여 웹사이트
 title: SpaceUs
-url: https://github.com/kimnamsun/SpaceUs
 ---

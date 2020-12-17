@@ -6,7 +6,7 @@ img1: cabin.png
 img2: cabin.png
 img3: cabin.png
 alt: image-alt
-client: https://github.com/kimnamsun/stocker
+client: github.com/kimnamsun/stocker
 category: Java, JavaScript, jQuery, JSP/Servlet, HTML/CSS, Oracle
 description: 물류 ERP System
 title: STOCKer

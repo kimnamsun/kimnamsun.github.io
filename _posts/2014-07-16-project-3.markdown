@@ -4,7 +4,8 @@ modal-id: 3
 project-date: 2014-07-16
 img1: circus.png
 alt: image-alt
-client: Start Bootstrap
-category: Web Development
+client: wizinsta.com
+category: Java, Spring, Hibernate, JavaScript, jQuery, HTML/CSS, MySQL, git
 description: SNS 계정관리 사이트
+title: Wizinsta
 ---
