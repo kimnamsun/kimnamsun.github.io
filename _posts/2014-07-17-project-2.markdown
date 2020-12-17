@@ -1,14 +1,14 @@
 ---
 layout: default
 modal-id: 2
-date: 2020.08.26 ~ 2020.10.23
+project-date: 2020.08.26 ~ 2020.10.23
 img1: cake.png
 img2: cake.png
 img3: cake.png
 alt: image-alt
-project-date: October 2020
 client: Start Bootstrap
 category: Java, Spring, Mybatis, JavaScript, jQuery, HTML/CSS, Oracle, git, AWS
 description: 공간대여 웹사이트
 title: SpaceUs
+url: https://github.com/kimnamsun/SpaceUs
 ---

@@ -32,12 +32,21 @@
                                         <strong><a href="http://startbootstrap.com">{{ post.project-date }}</a>
                                         </strong>
                                     </li>
+                                    <br>
                                 {% endif %}
                                 {% if post.category %}
                                     <li>Skills:
                                         <strong><a href="http://startbootstrap.com">{{ post.category }}</a>
                                         </strong>
                                     </li>
+                                    <br>
+                                {% endif %}
+                                {% if post.url %}
+                                    <li>
+                                        <strong><a href="{{ post.url }}">{{ post.url }}</a>
+                                        </strong>
+                                    </li>
+                                    <br>
                                 {% endif %}
                             </ul>
                             <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
