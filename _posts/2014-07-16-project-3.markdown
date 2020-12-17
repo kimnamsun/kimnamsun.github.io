@@ -1,12 +1,12 @@
 ---
 layout: default
 modal-id: 3
-project-date: 2014-07-16
+project-date: 2020.10.15 ~ 2020.11.26
 img1: circus.png
-alt: image-alt
+alt: Wizinsta
 client: wizinsta.com
 category: Java, Spring, Hibernate, JavaScript, jQuery, HTML/CSS, MySQL, git
 category2: Spring
-description: SNS 계정관리 사이트
+description: SNS 계정관리 웹사이트
 title: Wizinsta
 ---

@@ -6,7 +6,7 @@ img1: devices.jpg
 img2: desktop.jpg
 img3: mobile.jpg
 logo: logo.jpg
-alt: image-alt
+alt: SpaceUs
 client: github.com/kimnamsun/SpaceUs
 category: Java, Spring, Mybatis, JavaScript, jQuery, HTML/CSS, Oracle, git, AWS
 category2: Spring

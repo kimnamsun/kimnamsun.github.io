@@ -6,7 +6,7 @@ img1: devices.jpg
 img2: desktop.jpg
 img3: mobile.jpg
 logo: logo.png
-alt: image-alt
+alt: STOCKer
 client: github.com/kimnamsun/stocker
 category: Java, JavaScript, jQuery, JSP/Servlet, HTML/CSS, Oracle
 category2: JSP/Servlet
