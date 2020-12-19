@@ -13,4 +13,4 @@ Web Developer
 ## Portfolio
 * [STOCKer](https://github.com/kimnamsun/stocker)
 * [SpaceUs](https://github.com/kimnamsun/SpaceUs)
-* [Wizinsta](http://wizinsta.co.kr/)
+* [Wizinsta](http://wizinsta.com)
