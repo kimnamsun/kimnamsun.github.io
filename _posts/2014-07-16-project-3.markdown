@@ -2,7 +2,10 @@
 layout: default
 modal-id: 3
 project-date: 2020.10.15 ~ 2020.11.26
-img1: circus.png
+img1: devices.jpg
+img2: desktop.jpg
+img3: mobile.jpg
+logo: logo.jpg
 alt: Wizinsta
 client: wizinsta.com
 category: Java, Spring, Hibernate, JavaScript, jQuery, HTML/CSS, MySQL, git
