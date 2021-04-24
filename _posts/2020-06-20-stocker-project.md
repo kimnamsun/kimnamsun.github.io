@@ -23,6 +23,4 @@ Google SMTP 프로토콜를 사용한 메일보내기 기능 구현
 
 Java, JSP, HTML/CSS, Javascript, Oracle
 
-## Github
-
 [Github](https://github.com/kimnamsun/stocker)

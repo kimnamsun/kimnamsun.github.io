@@ -14,16 +14,14 @@ type: Frontend&Backend
 
 ## What did I do (FE & BE)
 
-- Database 모델링
-- 카카오, 네이버 소셜 로그인, 공유 기능 구현
-- 휴대폰 본인 인증 기능 구현
-- 다음 지도 API 기능 구현
-- Google SMTP 프로토콜를 사용한 메일보내기 기능 구현
+Database 모델링  
+카카오, 네이버 소셜 로그인, 공유 기능 구현  
+휴대폰 본인 인증 기능 구현  
+다음 지도 API 기능 구현  
+Google SMTP 프로토콜를 사용한 메일보내기 기능 구현
 
 ## Tech Stack
 
-- Java, Spring, MyBatis, JSP, HTML/CSS, Javascript, Oracle, Git, AWS
-
-## Github
+Java, Spring, MyBatis, JSP, HTML/CSS, Javascript, Oracle, Git, AWS
 
 [Github](https://github.com/kimnamsun/SpaceUs)
