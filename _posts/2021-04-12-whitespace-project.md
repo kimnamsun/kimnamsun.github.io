@@ -19,8 +19,4 @@ type: Frontend
 
 ## Tech Stack
 
-- ![HTML/CSS](https://img.shields.io/badge/-HTML/CSS-E44D26)
-- ![SCSS](https://img.shields.io/badge/-SCSS-ff69b4)
-- ![JavaScript(ES6+)](<https://img.shields.io/badge/-JavaScript(ES6%2B)-F0DB4D>)
-- ![React](https://img.shields.io/badge/-React-blue)
-- ![Git](https://img.shields.io/badge/-Git-black)
+- HTML/CSS, Scss, Javascript(ES6+), React, Git

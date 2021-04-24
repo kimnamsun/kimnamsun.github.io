@@ -19,8 +19,4 @@ type: Frontend&Backend
 
 ## Tech Stack
 
-- ![JAVA](https://img.shields.io/badge/-JAVA-red)
-- ![JSP](https://img.shields.io/badge/-JSP-navy)
-- ![HTML/CSS](https://img.shields.io/badge/-HTML/CSS-E44D26)
-- ![JavaScript](https://img.shields.io/badge/-JavaScript-F0DB4D)
-- ![Oracle](https://img.shields.io/badge/-Oracle-327da8)
+- Java, JSP, HTML/CSS, Javascript, Oracle
