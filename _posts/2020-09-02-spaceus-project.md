@@ -6,6 +6,8 @@ tech: "JAVA, JSP/Servlet, HTML/CSS, javascript, jquery, oracle"
 type: Frontend&Backend
 ---
 
+![Spaceus](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d3e09c8b-3fe4-4668-83c5-2f0d22f521d5/devices.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210424%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210424T063240Z&X-Amz-Expires=86400&X-Amz-Signature=0874accd96d6dc536977512be679430f7afebe6fe68a34e9dcfc301b9d1b3942&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22devices.jpg%22)
+
 ## Description
 
 사람과 사람을 연결하고 공간을 공유하는 공간공유 사이트 구축
@@ -21,3 +23,7 @@ type: Frontend&Backend
 ## Tech Stack
 
 - Java, Spring, MyBatis, JSP, HTML/CSS, Javascript, Oracle, Git, AWS
+
+## Github
+
+[Github](https://github.com/kimnamsun/SpaceUs)
