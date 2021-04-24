@@ -1,19 +1,26 @@
 ---
 layout: post
-title:  "Create github page"
-info: "Create my github blog."
-tech: "ruby, jekyll"
-type: B Company
+title: "Whitespace Project"
+info: "생활용품 판매 웹사이트인 공백 클론 프로젝트"
+tech: "HTML/CSS, Sass, javascript(ES6+), React"
+type: Frontend
 ---
 
-## Create github page 
-This is a project for my github blog.  
-I actually created a github page, but the contents are fake.  
+## Description
 
+생활용품 판매 웹사이트인 공백 클론 프로젝트
 
-## Tech
-To create a github page, you need to know ruby and jekyll.  
+## What did I do
 
+- 슬라이드를 이용한 배너 구현
+- 로그인 토큰 유무에 따른 회원가입 유도 팝업 구현
+- 모달 구현
+- formData를 이용한 multiple file업로드 기능
 
-## Duration
-Well, about three days  
+## Tech Stack
+
+- ![HTML/CSS](https://img.shields.io/badge/-HTML/CSS-E44D26)
+- ![SCSS](https://img.shields.io/badge/-SCSS-ff69b4)
+- ![JavaScript(ES6+)](<https://img.shields.io/badge/-JavaScript(ES6%2B)-F0DB4D>)
+- ![React](https://img.shields.io/badge/-React-blue)
+- ![Git](https://img.shields.io/badge/-Git-black)
