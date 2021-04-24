@@ -1,26 +1,37 @@
 ---
-layout: about 
+layout: about
 ---
 
 # About Me
-There is no specific format here. You can fill out the form you want.  
-For example, you might want to write a brief introduction about your self, experience, interests, publications, and other information.  
-I wrote "about me", "career", and "interests" on this page as an example.  
 
-<br/>
-
-# Career
-* Second Company (2012/01 ~ )
-  * Web Application Firewall
-    * Developed TCP network acceleration module.
-    * Developde Application User Interface.
-* First Company (2011/01 ~ 2011/12)
-  * VPN Development Company
-  * Team Leader of VPN Development Div.
+안녕하세요. 프론트앤드 개발자 김남선입니다.<br/>
+기술과 예술의 융합을 꿈꿉니다.<br/>
+깔끔한 코드 작성하는 것을 사랑합니다.<br/>
+계획 세우는 것을 좋아합니다. 행복한 여정은 꼼꼼한 계획에서 나온다고 생각합니다.
 
 <br/>
 
 # Interests
-I am interested in technology trends.  
-I'm not afraid to learn languages, but I enjoy using Python.  
-I like to automate and reduce annoying things.  
+
+요리, 운동, 음악
+
+<br/>
+
+# Tech Stack
+
+- HTML/CSS
+  - 시맨틱 마크업을 준수해 레이아웃을 구성합니다.
+- Javascript
+  - ES6 이후 최신 문법에 익숙합니다.
+  - DOM을 사용할 수 있습니다.
+- React
+  - CRA를 활용해 초기세팅을 할 수 있습니다.
+  - 컴포넌트로 사용해 코드의 재활용성을 높입니다.
+- Java
+  - MVC패턴에 준수해 CRUD를 구현할 수 있습니다.
+- Spring
+  - DI, IoC를 적절히 사용해 CRUD를 구현할 수 있습니다.
+- SQL
+  - 기본적인 쿼리문을 작성하고 이해할 수 있습니다.
+- Tool
+  - Git으로 하는 협업에 익숙합니다.
