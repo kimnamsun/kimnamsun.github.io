@@ -1,11 +1,11 @@
 # Site settings
-title: KIMNAMSUN
-description: "Frontend Developer"
-url: "https://kimnamsun.github.io"
+title: Monochrome | A minimal, responsive Jekyll blog theme
+description: "A minimal, responsive, ready to use blog template, built with Jekyll."
+url: "http://www.dyutibarma.github.io/monochrome"
 author:
-  name: "KIMNAMSUN"
-  email: "kimnsunnie@gmail.com"
-  url: "https://kimnamsun.github.io"
+  name: "The Review Index"
+  email: "dyutibarma@gmail.com"
+  url: "https://thereviewindex.com"
 
 # Build settings
 baseurl: /monochrome # Change this to your relative path (ex: /blog/), or leave just a /
@@ -18,7 +18,8 @@ paginate_path: /page:num/
 
 # Default values
 defaults:
-  - scope:
+  -
+    scope:
       path: ""
       type: "posts"
     values:
