@@ -19,7 +19,7 @@ type: Frontend
 ## What did I do
 
 &emsp;CRA를 이용한 프로젝트 초기 세팅  
-&emsp;Sass 를 사용해 Nesting, Variable을 활용한 레이아웃 디자인  
+&emsp;Sass 를 활용한 레이아웃 디자인  
 &emsp;슬라이드를 이용한 메인 배너 구현  
 &emsp;상품 리스트와 각 상품을 컴포넌트로 분리해 코드 재활용  
 &emsp;로그인 토큰 유무에 따른 회원가입 유도 팝업 구현  
