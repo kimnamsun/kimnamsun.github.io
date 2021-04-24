@@ -1,16 +1,13 @@
-## Kimnamsun
-Web Developer
-<br><br>
-## Technology Stack
-* ![Github Badge](https://img.shields.io/badge/-JAVA-red)
-* ![Github Badge](https://img.shields.io/badge/-Javascript-yellow)
-* ![Github Badge](https://img.shields.io/badge/-Spring-brightgreen)
-* ![Github Badge](https://shields.io/badge/-HTML/CSS-ff69b4)
-* ![Github Badge](https://img.shields.io/badge/-Oracle-327da8)
-* ![Github Badge](https://img.shields.io/badge/-MySql-006F8C)
-* ![Github Badge](https://img.shields.io/badge/-Git-black)
-<br><br>
-## Portfolio
-* [STOCKer](https://github.com/kimnamsun/stocker)
-* [SpaceUs](https://github.com/kimnamsun/SpaceUs)
-* [Wizinsta](http://wizinsta.com)
+# Thinkspace
+
+> Thinkspace is just another minimalist Jekyll theme which designed for technical writing blog.
+
+[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![GENERATOR](https://img.shields.io/badge/made_with-jekyll-blue.svg) ![VERSION](https://img.shields.io/badge/current_version-2.5-green.svg) ![TRAVIS-CI](https://travis-ci.org/heiswayi/thinkspace.svg?branch=master)
+
+- **Demo:** https://heiswayi.github.io/thinkspace/
+
+![SCREENSHOT](https://i.imgur.com/1YS078k.png)
+
+## License
+
+[MIT](LICENSE.md)
