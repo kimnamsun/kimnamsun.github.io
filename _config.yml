@@ -1,38 +1,17 @@
 # Site settings
 title: KIMNAMSUN
-description: "Frontend Developer."
-url: "https://kimnamsun.github.io/"
-author:
-  name: "KIMNAMSUN"
-  email: "kimnsunnie@gmail.com"
-  url: "https://kimnamsun.github.io/"
+description: >
+  Frontend Developer
+author: Kimnamsun
+email: kimnsunnie@gmail.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://kimnamsun.github.io/" # the base hostname & protocol for your site
+twitter_username:
+github_username: kimnamsun
 
 # Build settings
-baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
+include: [_pages]
 markdown: kramdown
-source: .
-destination: ./_site
-permalink: /:title
-paginate: 8
-paginate_path: /page:num/
-
-# Default values
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-
-# Plugins
-gems:
-  - jekyll-paginate
-  - jekyll-sitemap
-
-# Custom variables
-version: "1.0.0"
-
-# Options
-custom_header: false
-custom_nav_footer: false
-reverse: false
+permalink: /:year/:month/:title
+sass:
+  style: compressed
