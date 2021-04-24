@@ -21,7 +21,8 @@ layout: about
 
 ### HTML/CSS
 
-&emsp;시맨틱 마크업을 준수해 레이아웃을 구성합니다.
+&emsp;시맨틱 마크업을 준수해 레이아웃을 구성합니다.  
+&emsp;Sass를 활용할 수 있습니다.
 
 ### Javascript
 

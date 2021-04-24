@@ -8,6 +8,8 @@ type: Frontend
 
 ![Whitespace](<https://images.velog.io/images/nsunny0908/post/cae55cb3-5eb5-46f3-88ac-30f56fb5bc33/localhost_3000_%20(2).png>)
 
+<br />
+
 ## Description
 
 생활용품 판매 웹사이트인 공백 클론 프로젝트
