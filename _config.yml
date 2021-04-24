@@ -1,63 +1,38 @@
 # Site settings
-title_left: "KIM"
-title_right: "NAMSUN" # default: ""
-description: "Frontend Developer KIMNAMSUN"
-keywords: "Frontend, Developer, javascript, react, java, html, css"
-url: https://kimnamsun.github.io/ # site url
-baseurl: "" # apply repo name like "/myproject" if used under gh-pages branch, else (under master branch) just leave empty/blank
-cover: "" # image uri like logo/cover image for site seo
-
-google_analytics:
-twitter_username: ""
-comments_enabled: false # if enabled (set to true), please provide your disqus_username
-disqus_shortname: ""
-postshare_enabled: false
+title: KIMNAMSUN
+description: "Frontend Developer"
+url: "https://kimnamsun.github.io"
+author:
+  name: "KIMNAMSUN"
+  email: "kimnsunnie@gmail.com"
+  url: "https://kimnamsun.github.io"
 
 # Build settings
-permalink: /:year/:title/
+baseurl: /monochrome # Change this to your relative path (ex: /blog/), or leave just a /
 markdown: kramdown
-highlighter: rouge
-
-source: ./
+source: .
 destination: ./_site
+permalink: /:title
+paginate: 8
+paginate_path: /page:num/
 
-# Sass configuration
-sass:
-  sass_dir: assets/scss
-  style: compressed # expanded
+# Default values
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
 
-# Author settings
-author:
-  name: "kimnamsun"
-
-plugins:
-  - jekyll-sitemap
-  - bourbon
+# Plugins
+gems:
   - jekyll-paginate
+  - jekyll-sitemap
 
-# navbar pages
-navbar:
-  - slug: about
-    title: About
-  - slug: blog
-    title: Blog
+# Custom variables
+version: "1.0.0"
 
-exclude:
-  - "gulp"
-  - "node_modules"
-  - "bower"
-  - "bower_components"
-  - "config.rb"
-  - "src"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - ".rvmrc"
-  - ".rbenv-version"
-  - "package.json"
-  - "gulpfile.js"
-  - "README.md"
-  - "Rakefile"
-  - "changelog.md"
-  - "script"
-  - "vendor"
-  - "thinkspace.gemspec"
+# Options
+custom_header: false
+custom_nav_footer: false
+reverse: false
