@@ -8,32 +8,16 @@ author:
   name: Namsun Kim
   desc: Frontend Developer
   email: kimnsunnie@gmail.com
-  selfie: assets/img/profile.jpg
+  # selfie: assets/img/profile.jpg
 
 # social
 social:
   email: true
-  behance:
-  bitbucket:
-  dribbble:
-  facebook:
-  flickr:
   github: kimnamsun
-  google_plus:
-  instagram:
-  keybase:
   linkedin:
-  pinterest:
-  reddit:
-  soundcloud:
-  stack_exchange:
-  steam:
-  tumblr:
   gitlab:
-  twitter:
   vimeo:
-  wordpress:
-  youtube:
+  velog: nsunny0908
   default_txt: "Follow On"
 
 # Build settings

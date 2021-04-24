@@ -20,23 +20,12 @@
 </li>
 {% endif %}
 
-{% if site.social.instagram %}
+{% if site.social.velog %}
 <li>
-  <a href="http://instagram.com/{{ site.social.instagram }}" title="{{ site.social.default_txt }} Instagram">
+  <a href="https://velog.io/@{{ site.social.velog }}" title="{{ site.social.default_txt }} velog">
     <span class="fa-stack fa-lg">
       <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-    </span>
-  </a>
-</li>
-{% endif %}
-
-{% if site.social.keybase %}
-<li>
-  <a href="https://keybase.io/{{ site.social.keybase }}" title="{{ site.social.default_txt }} Keybase">
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fa fa-key fa-stack-1x fa-inverse"></i>
+      <i class="fab fa-vimeo fa-stack-1x fa-inverse"></i>
     </span>
   </a>
 </li>
@@ -70,17 +59,6 @@
     <span class="fa-stack fa-lg">
       <i class="fa fa-circle fa-stack-2x"></i>
       <i class="fab fa-vimeo fa-stack-1x fa-inverse"></i>
-    </span>
-  </a>
-</li>
-{% endif %}
-
-{% if site.social.youtube %}
-<li>
-  <a href="https://www.youtube.com/user/{{ site.social.youtube }}" title="{{ site.social.default_txt }} YouTube">
-    <span class="fa-stack fa-lg">
-      <i class="fa fa-circle fa-stack-2x"></i>
-      <i class="fab fa-youtube fa-stack-1x fa-inverse"></i>
     </span>
   </a>
 </li>
