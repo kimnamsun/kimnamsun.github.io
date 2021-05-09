@@ -1,18 +1,18 @@
 ---
 layout: post
 title: "Whitespace Project"
-info: "생활용품 판매 웹사이트인 공백 클론 프로젝트"
+info: "생활용품 판매 웹사이트 공백을 모티브로 한 팀프로젝트"
 tech: "HTML/CSS, Sass, javascript(ES6+), React"
 type: Frontend
 ---
 
-![Whitespace](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/43b68f9b-c132-4fe5-87ba-99684d4b9c45/localhost_3000__%282%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210424%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210424T110217Z&X-Amz-Expires=86400&X-Amz-Signature=4a2f2b01bced66fe559e95fd6591d05749b0925da636aff0a36ba119ae4d7405&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22localhost_3000__%282%29.png%22)
+![Whitespace](https://media.vlpt.us/images/nsunny0908/post/01943962-8b7a-4b5c-8219-f2725b05f5da/Apr-25-2021%2013-51-29.gif)
 
 <br />
 
 ## Description
 
-생활용품 판매 웹사이트인 공백 클론 프로젝트
+생활용품 판매 웹사이트 공백을 모티브로 한 팀프로젝트
 
 <br />
 
