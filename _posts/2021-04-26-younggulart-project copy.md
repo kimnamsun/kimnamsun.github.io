@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Younggulart Project"
-info: "미술품 경매 웹사이트 Singulart를 모티브로 한 팀프로젝트"
-tech: "HTML/CSS, Styled Component, javascript(ES6+), React, EC2, S3"
+title: 'Younggulart Project'
+info: '미술품 경매 웹사이트 Singulart를 모티브로 한 팀프로젝트'
+tech: 'HTML/CSS, Styled Component, javascript(ES6+), React, EC2, S3'
 type: Frontend
 ---
 
@@ -20,7 +20,7 @@ type: Frontend
 
 &emsp;CRA를 이용한 프로젝트 초기 세팅  
 &emsp;Styled Component 를 활용한 레이아웃 디자인  
-&emsp;카카오 소셜 로그인 / 로그아웃
+&emsp;카카오 소셜 로그인 / 로그아웃  
 &emsp;오프라인 경매 일정 페이지 달력 API, 지도 API  
 &emsp;Intersection Observer API를 활용한 무한스크롤과 로딩바  
 &emsp;AWS EC2, S3, github action을 이용한 배포 및 CI/CD 환경 셋팅  
