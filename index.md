@@ -24,23 +24,31 @@ layout: about
 &emsp;시맨틱 마크업을 준수해 레이아웃을 구성합니다.  
 &emsp;Sass를 활용할 수 있습니다.
 
+### Sass
+
+### Styled-Component
+
 ### Javascript
 
 &emsp;ES6 이후 최신 문법을 사용합니다.  
 &emsp;DOM을 익숙하게 다룰 수 있습니다.
+
+### Typescript
+
+&emsp;Typescript를 사용해 javascript코드의 품질을 높입니다.
 
 ### React
 
 &emsp;CRA를 활용해 초기세팅을 할 수 있습니다.  
 &emsp;컴포넌트를 사용해 코드의 재활용성을 높입니다.
 
-### Java
+### Java/Spring
 
 &emsp;MVC패턴에 준수해 CRUD를 구현할 수 있습니다.
 
-### Spring
+### Ruby on Rails
 
-&emsp;DI, IoC를 적절히 사용해 CRUD를 구현할 수 있습니다.
+&emsp;ORM을 사용해 CRUD를 구현할 수 있습니다.
 
 ### SQL
 
