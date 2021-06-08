@@ -30,8 +30,8 @@ type: Frontend
 
 ## Tech Stack
 
-HTML/CSS, Styled Component, javascript(ES6+), React, EC2, S3
+HTML/CSS, Styled Component, javascript(ES6+), React, AWS EC2, S3
 
 <br />
 
-[Github](https://github.com/wecode-bootcamp-korea/19-2nd-Younggulart-frontend)
+[Github](https://github.com/kimnamsun/19-2nd-Younggulart-frontend)

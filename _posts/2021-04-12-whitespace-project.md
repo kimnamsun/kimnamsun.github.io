@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Whitespace Project"
-info: "생활용품 판매 웹사이트 공백을 모티브로 한 팀프로젝트"
-tech: "HTML/CSS, Sass, javascript(ES6+), React"
+title: 'Whitespace Project'
+info: '생활용품 판매 웹사이트 공백을 모티브로 한 팀프로젝트'
+tech: 'HTML/CSS, Sass, javascript(ES6+), React'
 type: Frontend
 ---
 

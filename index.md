@@ -22,11 +22,7 @@ layout: about
 ### HTML/CSS
 
 &emsp;시맨틱 마크업을 준수해 레이아웃을 구성합니다.  
-&emsp;Sass를 활용할 수 있습니다.
-
-### Sass
-
-### Styled-Component
+&emsp;SASS와 Styled-Component를 활용할 수 있습니다.
 
 ### Javascript
 
@@ -54,6 +50,10 @@ layout: about
 
 &emsp;기본적인 쿼리문을 작성하고 이해할 수 있습니다.
 
-### Tool
+### AWS
+
+&emsp;EC2를 이용한 서버 배포 경험, S3와 github action을 활용한 CI, CD 셋팅 경험이 있습니다.
+
+### Git
 
 &emsp;Git으로 하는 협업에 익숙합니다.

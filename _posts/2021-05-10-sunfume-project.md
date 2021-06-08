@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Sunfume Project"
-info: "향수, 바디용품 커머스 앱 제작 개인프로젝트"
-tech: "HTML5, Tailwind.css, javascript(ES6+), Typescript, React, Framework7, Formik&Yup, React query, Recoil, Ruby on rails, Redis, Postgresql"
+title: 'Sunfume Project'
+info: '향수, 바디용품 커머스 앱 제작 개인프로젝트'
+tech: 'HTML5, Tailwind.css, javascript(ES6+), Typescript, React, Framework7, Formik&Yup, React query, Recoil, Ruby on rails, Redis, Postgresql'
 type: Frontend & Backend
 ---
 
@@ -55,7 +55,6 @@ type: Frontend & Backend
 ### Backend
 
 - 데이터베이스 모델링
-
 - 상품 리스트 조회
 - 상품 상세
   - 상품 상세 정보 조회
@@ -87,6 +86,10 @@ type: Frontend & Backend
 ### Backend
 
 - Ruby on rails, Redis, Postgresql
+
+### Tool
+
+- Git
 
 <br />
 
