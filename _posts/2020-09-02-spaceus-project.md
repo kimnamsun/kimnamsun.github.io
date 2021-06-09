@@ -6,7 +6,7 @@ tech: 'JAVA, Spring, MyBatis, HTML/CSS, javascript, jquery, oracle'
 type: Frontend & Backend
 ---
 
-![Spaceus](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/d3e09c8b-3fe4-4668-83c5-2f0d22f521d5/devices.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210424%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210424T063240Z&X-Amz-Expires=86400&X-Amz-Signature=0874accd96d6dc536977512be679430f7afebe6fe68a34e9dcfc301b9d1b3942&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22devices.jpg%22)
+![Spaceus](https://images.velog.io/images/nsunny0908/post/e49473d6-f9b8-4f89-901b-d597d3e42d33/devices-1.jpg)
 
 <br />
 
