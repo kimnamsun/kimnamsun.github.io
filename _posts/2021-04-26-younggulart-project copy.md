@@ -34,4 +34,5 @@ HTML/CSS, Styled Component, javascript(ES6+), React, AWS EC2, S3
 
 <br />
 
-[Github](https://github.com/kimnamsun/19-2nd-Younggulart-frontend)
+[Github](https://github.com/kimnamsun/19-2nd-Younggulart-frontend)  
+[회고록](https://velog.io/@nsunny0908/Singulart-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8-%ED%81%B4%EB%A1%A0-%EC%BD%94%EB%94%A9-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%ED%9A%8C%EA%B3%A0%EB%A1%9D)

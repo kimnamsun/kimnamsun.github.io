@@ -18,17 +18,16 @@ type: Frontend & Backend
 
 ## What did I do
 
-&emsp;Database 모델링  
-&emsp;Bootstrap을 이용한 레이아웃 디자인
+&emsp;데이터베이스 모델링  
+&emsp;Bootstrap을 이용한 레이아웃 디자인  
 &emsp;로그인 -> User, Host, Admin으로 권한 구분  
 &emsp;SMTP 프로토콜을 사용한 메일보내기 기능  
 &emsp;Cool SMS API를 활용한 휴대폰 본인 인증 기능  
 &emsp;소셜 회원가입 및, 로그인 (구글, 네이버, 카카오)  
-&emsp;공간 상세 페이지
-&emsp;해시태그 기획전 리스트, 등록
+&emsp;공간 상세 페이지  
+&emsp;해시태그 기획전 리스트, 등록  
 &emsp;카카오, 네이버 소셜 로그인, 공유 기능  
 &emsp;다음 지도 API 기능 구현
-&emsp;AWS RDS를 통한 Database관리
 
 <br />
 

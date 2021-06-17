@@ -19,10 +19,10 @@ type: Frontend & Backend
 ## What did I do
 
 &emsp;Database 모델링  
-&emsp;Bootstrap을 이용한 레이아웃 디자인
-&emsp;로그인 : 부서별로 다른 접근권한
-&emsp;SMTP 프로토콜을 사용한 메일보내기 기능
-&emsp;로그인 : 부서별로 다른 접근권한
+&emsp;Bootstrap을 이용한 레이아웃 디자인  
+&emsp;로그인 : 부서별로 다른 접근권한  
+&emsp;SMTP 프로토콜을 사용한 메일보내기 기능  
+&emsp;로그인 : 부서별로 다른 접근권한  
 &emsp;Zxing 라이브러리를 활용한 QR코드 생성 및 조회 기능 구현  
 &emsp;OpenWeatherMap 공공데이터를 활용한 날씨 API 기능 구현
 
