@@ -26,9 +26,8 @@ const IndexPage = ({ data }) => {
     ))
 
   const postsListContainer = groupBy(posts, getDateYear)
-    .map(({ year, posts }, i) => (
+    .map(({ posts }, i) => (
       <div key={i}>
-        <h4 className="code">{year}</h4>
         {postsList(posts)}
       </div>
     ))

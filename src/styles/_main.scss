@@ -13,7 +13,9 @@ body {
   line-height: 20px;
   font-weight: normal;
   font-style: normal;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Ubuntu, Cantarell,
+    Roboto, Helvetica, Arial, Noto Sans, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   color: #333333;
   padding: 20px;
   margin: 0;
@@ -29,9 +31,9 @@ h3,
 h4,
 h5,
 h6 {
-    margin-bottom: 1rem;
-    line-height: 1.25;
-    color: #313131;
+  margin-bottom: 1rem;
+  line-height: 1.25;
+  color: #313131;
 }
 h1 {
   font-size: 2rem;
@@ -82,12 +84,12 @@ blockquote {
   position: relative;
   margin: 0 auto 35px;
   text-align: center;
-  animation-duration: 0.7s;
-  animation-fill-mode: both;
-  animation-name: bounce;
-  -webkit-animation-duration: 0.7s;
-  -webkit-animation-fill-mode: both;
-  -webkit-animation-name: bounce;
+  // animation-duration: 0.7s;
+  // animation-fill-mode: both;
+  // animation-name: bounce;
+  // -webkit-animation-duration: 0.7s;
+  // -webkit-animation-fill-mode: both;
+  // -webkit-animation-name: bounce;
   a {
     background: #ddd url(".././images/logo_wrapper.png");
     color: #000;
@@ -111,12 +113,13 @@ blockquote {
       display: inline-block !important;
     }
     .logo-avatar {
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 1px 3px #6768ab;
       -webkit-border-radius: 50%;
       -moz-border-radius: 50%;
       border-radius: 50%;
     }
-    @media (max-width : 480px) {&:hover + .logo-prompt,
+    @media (max-width: 480px) {
+      &:hover + .logo-prompt,
       &:focus + .logo-prompt {
         display: none !important;
       }
@@ -128,8 +131,7 @@ blockquote {
     vertical-align: middle;
     padding: 5px;
     border-radius: 3px;
-    background: #666;
-    background: rgba(0,0,0,.5);
+    background: #6768ab;
     margin-left: 15px;
     color: #fff;
     font-size: 0.8235em;
@@ -141,8 +143,7 @@ blockquote {
       content: "";
       border-width: 5px 5px 5px 0;
       border-style: solid;
-      border-color: transparent #666;
-      border-color: transparent rgba(0,0,0,.5);
+      border-color: transparent #6768ab;
       position: absolute;
       top: 50%;
       left: -5px;
@@ -173,12 +174,6 @@ sup {
 }
 time {
   color: #555;
-}
-code,
-pre,
-.code,
-.footnotes {
-  font-family: Consolas, monaco, monospace;
 }
 code {
   color: #f14e32;
@@ -233,9 +228,26 @@ article {
   }
   .divider {
     background: #ddd;
-    background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,0)),color-stop(#ccc),to(rgba(255,255,255,0)));
-    background: -webkit-linear-gradient(left,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
-    background: linear-gradient(to right,rgba(255,255,255,0),#ccc,rgba(255,255,255,0));
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(rgba(255, 255, 255, 0)),
+      color-stop(#ccc),
+      to(rgba(255, 255, 255, 0))
+    );
+    background: -webkit-linear-gradient(
+      left,
+      rgba(255, 255, 255, 0),
+      #ccc,
+      rgba(255, 255, 255, 0)
+    );
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      #ccc,
+      rgba(255, 255, 255, 0)
+    );
     height: 1px;
     margin: 2em 0;
   }
@@ -255,7 +267,7 @@ article {
   }
   .footnote {
     border: 0;
-    background-color: #0087BE;
+    background-color: #0087be;
     color: #fff;
     padding-left: 2px;
     padding-right: 2px;
@@ -278,12 +290,12 @@ article {
     }
     .reversefootnote {
       border: 0;
-      color: #0087BE;
+      color: #0087be;
     }
   }
   a:hover {
-    color: #369;
-    border-color: #369;
+    color: #6768ab;
+    border-color: #6768ab;
   }
 }
 .back {
@@ -362,43 +374,46 @@ section {
         letter-spacing: 1px;
         text-transform: uppercase;
       }
-      @media (min-width: 992px) {a {
+      @media (min-width: 992px) {
+        a {
           border-bottom: 2px solid transparent;
           &:hover {
-            border-color: #000;
+            border-color: #6768ab;
           }
         }
       }
     }
   }
 }
-@keyframes bounce {0% {
-    transform: translate3d( 0, -1000px, 0 );
+@keyframes bounce {
+  0% {
+    transform: translate3d(0, -1000px, 0);
   }
   60% {
-    transform: translate3d( 0, 25px, 0 );
+    transform: translate3d(0, 25px, 0);
   }
   75% {
-    transform: translate3d( 0, -10px, 0 );
+    transform: translate3d(0, -10px, 0);
   }
   90% {
-    transform: translate3d( 0, 5px, 0 );
+    transform: translate3d(0, 5px, 0);
   }
   100% {
     transform: none;
   }
 }
-@-webkit-keyframes bounce {0% {
-    -webkit-transform: translate3d( 0, -1000px, 0 );
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translate3d(0, -1000px, 0);
   }
   60% {
-    -webkit-transform: translate3d( 0, 25px, 0 );
+    -webkit-transform: translate3d(0, 25px, 0);
   }
   75% {
-    -webkit-transform: translate3d( 0, -10px, 0 );
+    -webkit-transform: translate3d(0, -10px, 0);
   }
   90% {
-    -webkit-transform: translate3d( 0, 5px, 0 );
+    -webkit-transform: translate3d(0, 5px, 0);
   }
   100% {
     -webkit-transform: none;

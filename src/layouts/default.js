@@ -29,7 +29,6 @@ const DefaultLayout = ({ children }) => (
       <>
         <Header avatar={data.site.siteMetadata.avatar} />
         <div id="content">{children}</div>
-        <Footer siteTitle={data.site.siteMetadata.title} />
       </>
     )}
   />

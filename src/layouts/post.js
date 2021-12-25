@@ -1,7 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import DefaultLayout from "../layouts/default"
+import DefaultLayout from "./default"
 import SEO from "../components/seo"
 
 const PostTemplate = ({ data, pageContext }) => {
@@ -31,12 +31,11 @@ const PostTemplate = ({ data, pageContext }) => {
             &lt;&lt;
           </Link>
         )}
-        <span> &middot; </span>
+        <span>&nbsp;</span>
         <Link to="/" className="home" className="home" title="Back Home">
-          {" "}
-          Home{" "}
+          Home
         </Link>
-        <span> &middot; </span>
+        <span>&nbsp;</span>
         {next && (
           <Link
             className="next"
