@@ -54,7 +54,6 @@ module.exports = {
       options: {
         name: `the-plain-gatsby-starter`,
         short_name: `the-plain-gatsby`,
-        start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
