@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `The Plain Gatsby`,
-    description: `A simple minimalist starter for your personal blog.`,
-    author: `@wangonya`,
-    avatar: `https://avatars0.githubusercontent.com/u/19375569?s=460&v=4`,
-    siteUrl: `https://the-plain-gatsby.netlify.com`,
+    title: `KIMNAMSUN`,
+    description: `FrontEnd Developer KIMNAMSUN`,
+    author: `@kimnamsun`,
+    avatar: `https://avatars.githubusercontent.com/u/66931791?v=4`,
+    siteUrl: `https://kimnamsun.github.io/`,
   },
   plugins: [
     {
