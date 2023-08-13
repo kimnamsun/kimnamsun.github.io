@@ -4,13 +4,12 @@ import styled from "styled-components"
 import SEO from "components/SEO"
 import filter from "lodash/filter"
 
-import { graphql, navigate } from "gatsby"
+import { graphql } from "gatsby"
 
 import queryString from "query-string"
 
 import Layout from "components/Layout"
 import Title from "components/Title"
-import TagList from "components/TagList"
 import PostList from "components/PostList"
 import VerticleSpace from "components/VerticalSpace"
 
@@ -67,19 +66,6 @@ const TagsPage = ({ data }) => {
             There are {tags.length} tag{tags.length > 1 && "s"}.
           </Title>
         )}
-
-        <TagList
-          count
-          tagList={tags}
-          selected={selected}
-          onClick={tag => {
-            console.log(tag, selected)
-            if (tag === selected) {
-              navigate("/tags")
-              alert("zz")
-            } else setSelected(tag)
-          }}
-        />
       </TagListWrapper>
 
       <VerticleSpace size={32} />

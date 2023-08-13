@@ -4,7 +4,6 @@ import styled from "styled-components"
 import { author } from "../../../../blog-config"
 
 import Divider from "components/Divider"
-import TagList from "components/TagList"
 
 const Wrapper = styled.div`
   margin-top: 32px;
@@ -36,7 +35,7 @@ const Date = styled.span`
   color: ${props => props.theme.colors.secondaryText};
 `
 
-const Header = ({ title, date, tags, minToRead }) => {
+const Header = ({ title, date, minToRead }) => {
   return (
     <Wrapper>
       <ArticleTitle> {title} </ArticleTitle>
@@ -45,7 +44,6 @@ const Header = ({ title, date, tags, minToRead }) => {
         <Date>· {date} </Date>
         <Date>· {minToRead} min read </Date>
       </Information>
-      {tags && <TagList tagList={tags} />}
       <Divider mt="0" />
     </Wrapper>
   )

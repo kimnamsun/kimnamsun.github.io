@@ -9,28 +9,13 @@ import { siteUrl } from "../../blog-config"
 
 const Post = ({ data }) => {
   const post = data.markdownRemark
-  const { previous, next, seriesList } = data
+  const { previous, next } = data
 
-  const { title, date, update, tags, series } = post.frontmatter
+  const { title, date } = post.frontmatter
   const { excerpt } = post
   const { readingTime, slug } = post.fields
 
   let filteredSeries = []
-  if (series !== null) {
-    filteredSeries = seriesList.edges.map(seriesPost => {
-      if (seriesPost.node.id === post.id) {
-        return {
-          ...seriesPost.node,
-          currentPost: true,
-        }
-      } else {
-        return {
-          ...seriesPost.node,
-          currentPost: false,
-        }
-      }
-    })
-  }
 
   return (
     <Layout>
@@ -39,12 +24,10 @@ const Post = ({ data }) => {
         <Article.Header
           title={title}
           date={date}
-          update={update}
-          tags={tags}
           minToRead={Math.round(readingTime.minutes)}
         />
         {filteredSeries.length > 0 && (
-          <Article.Series header={series} series={filteredSeries} />
+          <Article.Series series={filteredSeries} />
         )}
         <Article.Body html={post.html} />
         <Article.Footer previous={previous} next={next} />
@@ -74,9 +57,6 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        update(formatString: "MMMM DD, YYYY")
-        tags
-        series
       }
       fields {
         slug

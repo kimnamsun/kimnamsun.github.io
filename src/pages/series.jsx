@@ -7,7 +7,6 @@ import { graphql } from "gatsby"
 
 import Layout from "components/Layout"
 import Title from "components/Title"
-import SeriesList from "components/SeriesList"
 import VerticleSpace from "components/VerticalSpace"
 import NoContent from "components/NoContent"
 
@@ -49,8 +48,6 @@ const SeriesPage = ({ data }) => {
       {series.length === 0 && <NoContent name="series" />}
 
       <VerticleSpace size={32} />
-
-      <SeriesList seriesList={series} />
     </Layout>
   )
 }

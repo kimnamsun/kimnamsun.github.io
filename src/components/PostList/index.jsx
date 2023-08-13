@@ -6,7 +6,6 @@ import { Link } from "gatsby"
 
 import Title from "components/Title"
 import Divider from "components/Divider"
-import TagList from "components/TagList"
 
 const PostListWrapper = styled.div`
   @media (max-width: 768px) {
@@ -28,14 +27,6 @@ const Date = styled.p`
   margin-bottom: 16px;
   font-size: 14.4px;
   color: ${props => props.theme.colors.tertiaryText};
-`
-
-const Excerpt = styled.p`
-  margin-bottom: 32px;
-  line-height: 1.7;
-  font-size: 16px;
-  color: ${props => props.theme.colors.secondaryText};
-  word-break: break-all;
 `
 
 const checkIsScrollAtBottom = () => {
@@ -70,8 +61,7 @@ const PostList = ({ postList }) => {
   return (
     <PostListWrapper>
       {postList.slice(0, postCount).map((post, i) => {
-        const { title, description, date, tags } = post.frontmatter
-        const { excerpt } = post
+        const { title, date } = post.frontmatter
         const { slug } = post.fields
 
         return (
@@ -81,12 +71,6 @@ const PostList = ({ postList }) => {
                 <Link to={slug}>{title}</Link>
               </Title>
               <Date>{date}</Date>
-              {description ? (
-                <Excerpt>{description}</Excerpt>
-              ) : (
-                <Excerpt>{excerpt}</Excerpt>
-              )}
-              <TagList tagList={tags} />
             </PostWrapper>
 
             {postCount - 1 !== i && postList.length - 1 !== i && (

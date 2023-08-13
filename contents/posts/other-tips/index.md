@@ -1,12 +1,6 @@
 ---
 title: "🤩 4. Other Tips"
-description:
 date: 2021-05-04
-update: 2021-05-04
-tags:
-  - hoodie
-  - other-tips
-series: "Getting started your blog with gatsby-starter-hoodie"
 ---
 
 ## How to change the favicon?
