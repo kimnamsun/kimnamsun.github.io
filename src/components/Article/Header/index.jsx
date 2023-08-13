@@ -42,7 +42,6 @@ const Header = ({ title, date, minToRead }) => {
       <Information>
         <Author> @{author} </Author>
         <Date>· {date} </Date>
-        <Date>· {minToRead} min read </Date>
       </Information>
       <Divider mt="0" />
     </Wrapper>

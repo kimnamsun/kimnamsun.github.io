@@ -9,13 +9,12 @@ import { siteUrl } from "../../blog-config"
 
 const Post = ({ data }) => {
   const post = data.markdownRemark
+
   const { previous, next } = data
 
   const { title, date } = post.frontmatter
   const { excerpt } = post
   const { readingTime, slug } = post.fields
-
-  let filteredSeries = []
 
   return (
     <Layout>
@@ -26,9 +25,6 @@ const Post = ({ data }) => {
           date={date}
           minToRead={Math.round(readingTime.minutes)}
         />
-        {filteredSeries.length > 0 && (
-          <Article.Series series={filteredSeries} />
-        )}
         <Article.Body html={post.html} />
         <Article.Footer previous={previous} next={next} />
       </Article>

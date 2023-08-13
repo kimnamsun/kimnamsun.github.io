@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react"
 import styled, { useTheme } from "styled-components"
 
 import { Link } from "gatsby"
-
-import { title } from "../../../../blog-config"
+import { FaGithub } from "react-icons/fa"
+import { title, links } from "../../../../blog-config"
 
 import { FaSun, FaMoon, FaSearch } from "react-icons/fa"
 
@@ -105,6 +105,9 @@ const Header = ({ toggleTheme }) => {
   const theme = useTheme()
   const [scrollY, setScrollY] = useState()
   const [hidden, setHidden] = useState(false)
+  const { github } = links
+
+  console.log({ github })
 
   const detectScrollDirection = () => {
     if (scrollY >= window.scrollY) {
@@ -143,6 +146,9 @@ const Header = ({ toggleTheme }) => {
               <FaMoon onClick={toggleTheme} />
             </IconRail>
           </ToggleWrapper>
+          <a href={github} target="_blank" rel="noopener noreferrer">
+            <FaGithub />
+          </a>
           <Link to="/search">
             <FaSearch style={{ marginRight: 0 }} />
           </Link>

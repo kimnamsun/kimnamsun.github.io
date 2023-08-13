@@ -3,9 +3,7 @@ import { graphql } from "gatsby"
 
 import Layout from "components/Layout"
 import SEO from "components/SEO"
-import Bio from "components/Bio"
 import PostList from "components/PostList"
-import Divider from "components/Divider"
 import VerticalSpace from "components/VerticalSpace"
 
 import { title, description, siteUrl } from "../../blog-config"
@@ -27,8 +25,8 @@ const BlogIndex = ({ data }) => {
     <Layout>
       <SEO title={title} description={description} url={siteUrl} />
       <VerticalSpace size={48} />
-      <Bio />
-      <Divider />
+      {/* <Bio />
+      <Divider /> */}
       <PostList postList={posts} />
     </Layout>
   )
@@ -55,10 +53,7 @@ export const pageQuery = graphql`
         }
         frontmatter {
           date(formatString: "MMMM DD, YYYY")
-          update(formatString: "MMM DD, YYYY")
           title
-          description
-          tags
         }
       }
     }

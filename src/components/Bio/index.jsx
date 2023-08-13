@@ -1,15 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import {
-  FaGithub,
-  FaKaggle,
-  FaFacebook,
-  FaLinkedin,
-  FaInstagram,
-  FaLink,
-  FaEnvelope,
-} from "react-icons/fa"
+import { FaGithub, FaEnvelope } from "react-icons/fa"
 
 import { siteUrl, description, author, links } from "../../../blog-config"
 
@@ -87,31 +79,19 @@ const Bio = () => {
 
   return (
     <BioWrapper id="bio">
-      <Profile />
+      {/* <Profile /> */}
       <div>
-        <Author>@{author}</Author>
+        <Author>{author}</Author>
         <Description>{description}</Description>
         <LinksWrapper>
           <Link link={github}>
             <FaGithub />
           </Link>
-          <Link link={kaggle}>
-            <FaKaggle />
-          </Link>
-          <Link link={instagram}>
-            <FaInstagram />
-          </Link>
-          <Link link={facebook}>
-            <FaFacebook />
-          </Link>
-          <Link link={linkedIn}>
+          {/* <Link link={linkedIn}>
             <FaLinkedin />
-          </Link>
+          </Link> */}
           <Link link={email}>
             <FaEnvelope />
-          </Link>
-          <Link link={etc}>
-            <FaLink />
           </Link>
         </LinksWrapper>
       </div>

@@ -2,10 +2,10 @@ import React from "react"
 import styled from "styled-components"
 
 const Wrapper = styled.h1`
-  margin-bottom: 24px;
+  margin-bottom: 10px;
   font-size: ${props => props.size};
   font-weight: 700;
-  line-height: 1.3;
+  line-height: 1.2;
   color: ${props => props.theme.colors.text};
   word-break: break-all;
 
@@ -22,9 +22,9 @@ const Wrapper = styled.h1`
 
 const Title = ({ size, children }) => {
   const sizes = {
-    sm: "19.2px",
-    md: "25.6px",
-    bg: "33.6px",
+    sm: "12.2px",
+    md: "18.6px",
+    bg: "26.6px",
   }
 
   return <Wrapper size={sizes[size]}> {children} </Wrapper>
