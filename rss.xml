@@ -1,4 +1,81 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of kimnamsun]]></title><description><![CDATA[frontend]]></description><link>https://kimnamsun.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 30 Sep 2023 14:46:53 GMT</lastBuildDate><item><title><![CDATA[신뢰할 수 없는 코드를 쓰면서 불변성 지키기]]></title><description><![CDATA[쏙쏙 들어오는 함수형 코딩 북 스터디를 하며 정리한 내용이다. Chapter…]]></description><link>https://kimnamsun.github.io/contents/posts/2023-09-17/</link><guid isPermaLink="false">https://kimnamsun.github.io/contents/posts/2023-09-17/</guid><pubDate>Sun, 17 Sep 2023 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of kimnamsun]]></title><description><![CDATA[frontend]]></description><link>https://kimnamsun.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 01 Oct 2023 09:35:44 GMT</lastBuildDate><item><title><![CDATA[mac에 rocky linux 설치하기]]></title><description><![CDATA[설치환경 : ,  VMware Fusion, Rocky Linux iso 파일 다운로드 VMware Fusion 나는 그냥 무료 평가판을 사용했다. Rocky Linux
+ VMware Fusion 실행 1. install from disc or…]]></description><link>https://kimnamsun.github.io/contents/posts/2023-10-01/</link><guid isPermaLink="false">https://kimnamsun.github.io/contents/posts/2023-10-01/</guid><pubDate>Sun, 01 Oct 2023 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;설치환경 : &lt;code class=&quot;language-text&quot;&gt;macOS Big Sur 11.6&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;VMware Fusion&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;VMware Fusion, Rocky Linux iso 파일 다운로드&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.vmware.com/kr/products/fusion.html&quot;&gt;VMware Fusion&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;나는 그냥 무료 평가판을 사용했다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://rockylinux.org/ko/download&quot;&gt;Rocky Linux&lt;/a&gt;
+&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/a2a1ecad-a1e5-4769-a28d-96ea34206d0a/image.png&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;VMware Fusion 실행&lt;/h2&gt;
+&lt;h3&gt;1. install from disc or image 클릭&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/51f40359-1582-4355-a0b7-316c56bb953b/image.png&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;2. 받은 iso 파일 업로드&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/b17601a5-7ef4-4fcf-9dda-0579d4482bcf/image.png&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;3. Linux -&gt; Red Hat Enterprise Linux 9 64-bit Arm 선택&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/79aaa4b4-4032-47b1-9439-cd326e7afb2b/image.png&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;4. Install Rocky Linux 9.2 선택&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/f8358b86-57f3-4637-9de2-0cdcc6f5195e/image.png&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;5. root 비밀번호를 설정하고 설치 시작 클릭&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;root 비밀번호를 반드시 기억할 것.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/97ff4d1e-30fc-4c29-9a56-fff925a18af8/image.png&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;6. 시스템 재시작 클릭&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/a080651a-2f8d-4557-b594-14cab8b78e16/image.png&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;재시작 후 텍스트 모드로밖에 진입이 안되는 문제 상황&lt;/h2&gt;
+&lt;h3&gt;1. 사용가능한 패키지 그룹 확인하기&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;dnf group list&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/eafffe0e-b430-49a5-8c08-d2e2def2ccf7/image.png&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;2. GUI 패키지 그룹 설치&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;dnf groupinstall &lt;span class=&quot;token string&quot;&gt;&quot;Server with GUI&quot;&lt;/span&gt;
+
+OR
+
+dnf groupinstall &lt;span class=&quot;token string&quot;&gt;&quot;Workstation&quot;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;3. 부팅 설정을 graphical로 변경&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;systemctl set-default graphical.target&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;기본 부팅 설정을 확인하고 싶다면 아래 명령어로 확인할 수 있다.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;systemctl get-default&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;4. 재부팅&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token function&quot;&gt;reboot&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;한글 설정하기&lt;/h2&gt;
+&lt;h3&gt;1. 변경가능한 locale 확인&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;locale &lt;span class=&quot;token parameter variable&quot;&gt;-a&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/f3a591b8-fe38-43c7-8e3b-2aa9f40a3900/image.png&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;2. locale 변경&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;localectl set-locale &lt;span class=&quot;token assign-left variable&quot;&gt;&lt;span class=&quot;token environment constant&quot;&gt;LANG&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;ko_KR.utf8&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;변경된 locale 확인&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;localectl&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;figure class=&apos;gatsby-resp-image-figure&apos; style=&apos;margin-bottom: 16px;&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-wrapper&apos; style=&apos;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 680px; &apos;&gt;
+      &lt;a class=&apos;gatsby-resp-image-link&apos; href=&apos;/static/8de878de45cad1a3b981d5fe675fc4bd/ad973/image.png&apos; style=&apos;display: block&apos; target=&apos;_blank&apos; rel=&apos;noopener&apos;&gt;
+    &lt;span class=&apos;gatsby-resp-image-background-image&apos; style=&quot;padding-bottom: 18.23529411764706%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAlUlEQVR42n2PXQqEMBCDvUZbLaUKotZa/H9p73+rLBNwYUH2IQwMyTeTKqWEbdsQQsAwDFiWheq6Duu64r5viEd2+74jxshd27ZomgbW2h9V8zwTKObjOGg+zxN933MvoGmaeFA0jiOn9/4dqJSiQUICyjmjlMKgfKa1hjHmq7quOd9gBDrnCHrqXtfFqvKh1HsL/dMH4Ah0jNkMjJsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;&gt;&lt;/span&gt;
+  &lt;img class=&apos;gatsby-resp-image-image&apos; alt=&apos;Alt text&apos; title=&apos;&apos; src=&apos;/static/8de878de45cad1a3b981d5fe675fc4bd/ca1dc/image.png&apos; srcset=&apos;/static/8de878de45cad1a3b981d5fe675fc4bd/e7570/image.png 170w,
+/static/8de878de45cad1a3b981d5fe675fc4bd/f46e7/image.png 340w,
+/static/8de878de45cad1a3b981d5fe675fc4bd/ca1dc/image.png 680w,
+/static/8de878de45cad1a3b981d5fe675fc4bd/ad973/image.png 722w&apos; sizes=&apos;(max-width: 680px) 100vw, 680px&apos; style=&apos;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&apos; loading=&apos;lazy&apos; decoding=&apos;async&apos;&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;
+    &lt;figcaption class=&apos;gatsby-resp-image-figcaption&apos;&gt;Alt text&lt;/figcaption&gt;
+  &lt;/figure&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;참고문서&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://velog.io/@dojun527/Rocky-Linux-%EC%84%A4%EC%B9%98&quot;&gt;https://velog.io/@dojun527/Rocky-Linux-%EC%84%A4%EC%B9%98&lt;/a&gt;&lt;br&gt;
+&lt;a href=&quot;https://ko.linux-console.net/?p=444&quot;&gt;https://ko.linux-console.net/?p=444&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[신뢰할 수 없는 코드를 쓰면서 불변성 지키기]]></title><description><![CDATA[쏙쏙 들어오는 함수형 코딩 북 스터디를 하며 정리한 내용이다. Chapter…]]></description><link>https://kimnamsun.github.io/contents/posts/2023-09-17/</link><guid isPermaLink="false">https://kimnamsun.github.io/contents/posts/2023-09-17/</guid><pubDate>Sun, 17 Sep 2023 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;쏙쏙 들어오는 함수형 코딩 북 스터디를 하며 정리한 내용이다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1&gt;Chapter 7 : 신뢰할 수 없는 코드를 쓰면서 불변성 지키기&lt;/h1&gt;
