@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of kimnamsun]]></title><description><![CDATA[frontend]]></description><link>https://kimnamsun.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 09 Oct 2023 14:48:09 GMT</lastBuildDate><item><title><![CDATA[nx로 모노레포 구축하기 (삽질기록)]]></title><description><![CDATA[nx로 모노레포를 구축해볼 수 있는 기회가 있어서 해보았다. 정보를 얻기 위해서는 적절하지 않은 글이며, 내가 어떤 삽질을 했는지에 대한 회고에 가까운 글이다. 모노레포를 구축하게 된 계기 vue…]]></description><link>https://kimnamsun.github.io/contents/posts/2023-10-09/</link><guid isPermaLink="false">https://kimnamsun.github.io/contents/posts/2023-10-09/</guid><pubDate>Mon, 09 Oct 2023 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of kimnamsun]]></title><description><![CDATA[frontend]]></description><link>https://kimnamsun.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 09 Oct 2023 14:55:40 GMT</lastBuildDate><item><title><![CDATA[nx로 모노레포 구축하기 (삽질기록)]]></title><description><![CDATA[nx로 모노레포를 구축해볼 수 있는 기회가 있어서 해보았다. 정보를 얻기 위해서는 적절하지 않은 글이며, 내가 어떤 삽질을 했는지에 대한 회고에 가까운 글이다. 모노레포를 구축하게 된 계기 vue…]]></description><link>https://kimnamsun.github.io/contents/posts/2023-10-09/</link><guid isPermaLink="false">https://kimnamsun.github.io/contents/posts/2023-10-09/</guid><pubDate>Mon, 09 Oct 2023 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;nx로 모노레포를 구축해볼 수 있는 기회가 있어서 해보았다. 정보를 얻기 위해서는 적절하지 않은 글이며, 내가 어떤 삽질을 했는지에 대한 회고에 가까운 글이다.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1&gt;모노레포를 구축하게 된 계기&lt;/h1&gt;
+&lt;h2&gt;모노레포를 구축하게 된 계기&lt;/h2&gt;
 &lt;p&gt;vue로 된 기존 레거시 프로젝트를 유지보수하게 되면서, 공통화가 전혀 안되어있는 코드 무더기를 발견하게 되었다.&lt;br&gt;
 예를 들면 이런 식이였다.
 레거시 프로젝트는 한 페이지에 3~4개 가량의 메뉴가 존재했고, 그 메뉴들은 각각의 모듈로서 동작하며 각각 다른 repository로 분리되어있었다.&lt;/p&gt;
 &lt;p&gt;lib 폴더 내에는 모듈에서 사용하는 util성 코드들이 있었는데, 가령 date와 관련된 코드들이 있는 &lt;code class=&quot;language-text&quot;&gt;date.js&lt;/code&gt;는 각 모듈에서 공통적으로 사용하는 코드이다보니, 각 모듈에서 복사 붙여넣기를 통해 사용하고 있었다.&lt;/p&gt;
 &lt;p&gt;내부적인 커뮤니케이션을 통해 공통화할 코드를 뽑아내고, 그 코드를 공통 모듈로 분리하여 사용하자는 의견이 나왔다.&lt;br&gt;
 그렇게 해서, 테스트로 &lt;code class=&quot;language-text&quot;&gt;아주 작은 모노레포&lt;/code&gt; 만들기를 시작하게 되었다.&lt;/p&gt;
-&lt;h1&gt;조사한 것들&lt;/h1&gt;
+&lt;h2&gt;조사한 것들&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;다른 라이브러리들은 어떤방식으로 구성했는가?&lt;/li&gt;
 &lt;li&gt;모노레포 빌드시스템&lt;/li&gt;
@@ -19,14 +19,14 @@
 &lt;blockquote&gt;
 &lt;p&gt;모노레포를 구성하기 전에 필요한 사전조사들을 위와 같이 진행했고, 같이 테스트를 진행하기로 한 팀원분은 turborepo, 나는 nx를 선택해 테스트를 진행하기로 했다.&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;h1&gt;nx를 선택한 이유&lt;/h1&gt;
+&lt;h2&gt;nx를 선택한 이유&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;turborepo에 비해 풍부한 생태계&lt;/li&gt;
 &lt;li&gt;분산 캐싱 (turborepo, nx 둘다 지원)&lt;/li&gt;
 &lt;li&gt;초기 모노레포 개발 환경 구축 비용을 크게 줄여줌.&lt;/li&gt;
 &lt;li&gt;의존성 그래프 시각화 기능 (turborepo, nx 둘다 지원)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;nx로 모노레포 구축해보기&lt;/h1&gt;
+&lt;h2&gt;nx로 모노레포 구축해보기&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;구축환경 : &lt;code class=&quot;language-text&quot;&gt;nx&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;vite&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;pnpm&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -39,17 +39,17 @@
 &lt;li&gt;changeset을 통해 버전관리를 해본다.&lt;/li&gt;
 &lt;li&gt;vitest로 테스트코드를 작성해본다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;pnpm 설치&lt;/h1&gt;
+&lt;h2&gt;pnpm 설치&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;npm install &lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;g pnpm
 
 yarn global add pnpm&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;nx로 프로젝트 생성하기&lt;/h1&gt;
+&lt;h2&gt;nx로 프로젝트 생성하기&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;npx create&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;nx&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;workspace &lt;span class=&quot;token operator&quot;&gt;--&lt;/span&gt;pm pnpm&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/8d39d51d-9ab0-44d2-9ee5-cc568488e5d3/image.png&quot;&gt;&lt;/p&gt;
 &lt;h3&gt;🚨 계속 nx cloud 설정이 안되어있다는 에러.&lt;/h3&gt;
 &lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/7d6fd7c7-4e7e-4dbf-9612-dc5d5459bea7/image.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;-&gt; ✅ Enable distributed caching to make your CI faster · No 를 선택하니까 nx cloud를 자동으로 설치하지 않았음.&lt;/p&gt;
-&lt;h1&gt;패키지 생성하기&lt;/h1&gt;
+&lt;h2&gt;패키지 생성하기&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;nx g npm&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;package&lt;/span&gt; packages&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;common
 
 nx g npm&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;package&lt;/span&gt; packages&lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;vue&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -57,7 +57,7 @@ nx g npm&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span clas
 &lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/b72f8a78-b787-4791-bc53-ab7a4b73649a/image.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;-&gt; ✅ nx global 설치&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;yarn global add nx&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;package.json에 workspaces 설정&lt;/h1&gt;
+&lt;h2&gt;package.json에 workspaces 설정&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;json&quot;&gt;&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;&quot;name&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;@core-monorepo/source&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   &lt;span class=&quot;token property&quot;&gt;&quot;version&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;0.0.0&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
@@ -65,7 +65,6 @@ nx g npm&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span clas
   &lt;span class=&quot;token property&quot;&gt;&quot;workspaces&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;packages/*&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   ...
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;&lt;/h1&gt;
 &lt;p&gt;그러면 폴더구조는 이렇게 됨.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;├── packages
 │   ├── common
@@ -88,7 +87,7 @@ nx g npm&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span clas
 │       ├── src
 │       ├── tsconfig.json
 │       └── vite.config.ts&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;common 패키지 작성&lt;/h1&gt;
+&lt;h2&gt;common 패키지 작성&lt;/h2&gt;
 &lt;h3&gt;dependency 추가&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;pnpm add dayjs&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;vite.config.js 작성&lt;/h3&gt;
@@ -123,7 +122,7 @@ nx g npm&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span clas
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;vite로 build&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;pnpm run build&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;vue 패키지 작성&lt;/h1&gt;
+&lt;h2&gt;vue 패키지 작성&lt;/h2&gt;
 &lt;h3&gt;package.json에 common 패키지 dependency 추가&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;vue 컴포넌트에서 common 패키지 내의 util 코드를 사용하기 위해 common 패키지를 dependency로 추가해준다.&lt;/li&gt;
@@ -229,7 +228,7 @@ nx g npm&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span clas
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h1&gt;npm publish&lt;/h1&gt;
+&lt;h2&gt;npm publish&lt;/h2&gt;
 &lt;h3&gt;npm login&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;npm login&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;🚨 403 Forbidden Permission denied&lt;/h3&gt;
@@ -259,7 +258,7 @@ nx g npm&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span clas
 &lt;p&gt;-&gt; ✅ 오가니제이션 추가&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/5a26f63b-c597-498a-a28d-14b7f9b7709a/image.png&quot;&gt;&lt;/p&gt;
 &lt;p&gt;-&gt; 드디어 성공! 🎉&lt;/p&gt;
-&lt;h1&gt;vue project에서 core-monorepo/vue 패키지를 import해서 사용하기&lt;/h1&gt;
+&lt;h2&gt;vue project에서 core-monorepo/vue 패키지를 import해서 사용하기&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;publish된 vue 패키지를 vue 프로젝트에서 import해서 사용해보자.&lt;/li&gt;
 &lt;li&gt;vue package에서 common package의 로컬 경로를 바라보고 있어서, 이 부분을 실제 publish된 패키지를 바라보도록 수정해준 뒤 다시 publish 해주었다.&lt;/li&gt;
@@ -307,7 +306,7 @@ nx g npm&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span clas
 &lt;ul&gt;
 &lt;li&gt;vite.config 파일을 js로 작성했더니 발견하지 못했던 아주 사소한 에러였다. 🫨&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;changeset 으로 버전관리하기&lt;/h1&gt;
+&lt;h2&gt;changeset 으로 버전관리하기&lt;/h2&gt;
 &lt;h3&gt;1. pnpm-workspace.yaml 파일 생성&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;yaml&quot;&gt;&lt;pre class=&quot;language-yaml&quot;&gt;&lt;code class=&quot;language-yaml&quot;&gt;&lt;span class=&quot;token key atrule&quot;&gt;packages&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;-&lt;/span&gt; packages/* &lt;span class=&quot;token comment&quot;&gt;# 워크스페이스 패키지의 경로&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -332,7 +331,7 @@ nx g npm&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span clas
 &lt;h3&gt;5. changeset version&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;npx changeset version&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/7102e7df-60d4-480f-9967-c459cd3af7fb/image.png&quot;&gt;&lt;/p&gt;
-&lt;h1&gt;vitest로 테스트코드 작성하기&lt;/h1&gt;
+&lt;h2&gt;vitest로 테스트코드 작성하기&lt;/h2&gt;
 &lt;h3&gt;1. vitest 설치&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;pnpm add -w --save-dev vitest&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;2. vitest.config.ts 작성&lt;/h3&gt;
@@ -358,15 +357,15 @@ nx g npm&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;&lt;span clas
 &lt;h3&gt;3. jsdom 설치&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;pnpm add -w -D jsdom&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h3&gt;✅ vue 버전이 2.7.0 미만이라면, vue, vue-template-compiler 버전 업데이트 해준다.&lt;/h3&gt;
-&lt;h1&gt;docusaurus로 문서화&lt;/h1&gt;
+&lt;h2&gt;docusaurus로 문서화&lt;/h2&gt;
 &lt;h3&gt;package 경로 밑에서 docusaurus 프로젝트 생성&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;jsx&quot;&gt;&lt;pre class=&quot;language-jsx&quot;&gt;&lt;code class=&quot;language-jsx&quot;&gt;npx create&lt;span class=&quot;token operator&quot;&gt;-&lt;/span&gt;docusaurus&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;→ ✅ node 버전과 npm 버전이 맞지 않는다는 오류가 뜨면 버전 업데이트를 해주면 된다.&lt;/p&gt;
-&lt;h1&gt;끝!&lt;/h1&gt;
+&lt;h2&gt;끝!&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;두서 없고 미흡한 글이지만, 많은 삽질 끝에 결국 모노레포 구축에 성공한 걸 기념(?)으로나마 글로 남기고 싶었다.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1&gt;참고자료&lt;/h1&gt;
+&lt;h2&gt;참고자료&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&quot;https://if1live.github.io/posts/escape-from-jest-jest-is-slow/&quot;&gt;https://if1live.github.io/posts/escape-from-jest-jest-is-slow/&lt;/a&gt;&lt;br&gt;
 &lt;a href=&quot;https://velog.io/@saeeng/VITE-VITEST-migrate-from-Jest&quot;&gt;https://velog.io/@saeeng/VITE-VITEST-migrate-from-Jest&lt;/a&gt;&lt;br&gt;
 &lt;a href=&quot;https://velog.io/@gu2144/Turborepo%EB%A1%9C-%EB%AA%A8%EB%85%B8%EB%A0%88%ED%8F%AC-%EA%B0%9C%EB%B0%9C-%EA%B2%BD%ED%97%98-%EB%84%93%ED%98%80%EB%B3%B4%EA%B8%B0&quot;&gt;https://velog.io/@gu2144/Turborepo로-모노레포-개발-경험-넓혀보기&lt;/a&gt;&lt;br&gt;
