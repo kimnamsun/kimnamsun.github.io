@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of kimnamsun]]></title><description><![CDATA[frontend]]></description><link>https://kimnamsun.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 09 Oct 2023 14:55:40 GMT</lastBuildDate><item><title><![CDATA[nx로 모노레포 구축하기 (삽질기록)]]></title><description><![CDATA[nx로 모노레포를 구축해볼 수 있는 기회가 있어서 해보았다. 정보를 얻기 위해서는 적절하지 않은 글이며, 내가 어떤 삽질을 했는지에 대한 회고에 가까운 글이다. 모노레포를 구축하게 된 계기 vue…]]></description><link>https://kimnamsun.github.io/contents/posts/2023-10-09/</link><guid isPermaLink="false">https://kimnamsun.github.io/contents/posts/2023-10-09/</guid><pubDate>Mon, 09 Oct 2023 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[RSS Feed of kimnamsun]]></title><description><![CDATA[frontend]]></description><link>https://kimnamsun.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 22 Oct 2023 12:28:40 GMT</lastBuildDate><item><title><![CDATA[yalc: npm publish없이 패키지를 테스트할 수 있는 방법]]></title><description><![CDATA[yalc: npm publish없이 패키지를 테스트할 수 있는 방법 나는 현재 프로젝트의 공통 모듈을 개발하고 있다. 그 공통 모듈은 common에 해당하는 utils성 함수와 공통 UI 컴포넌트로 나뉘어져있다. UI…]]></description><link>https://kimnamsun.github.io/contents/posts/2023-10-22/</link><guid isPermaLink="false">https://kimnamsun.github.io/contents/posts/2023-10-22/</guid><pubDate>Sun, 22 Oct 2023 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;yalc: npm publish없이 패키지를 테스트할 수 있는 방법&lt;/h2&gt;
+&lt;p&gt;나는 현재 프로젝트의 공통 모듈을 개발하고 있다.&lt;br&gt;
+그 공통 모듈은 common에 해당하는 utils성 함수와 공통 UI 컴포넌트로 나뉘어져있다.&lt;br&gt;
+UI 컴포넌트의 경우 빈번한 수정이 일어나고, 그 때마다 npm에 publish해서 다시 해당 패키지를 사용하는 프로젝트에서 install 하기가 여간 번거로운 것이 아니다.&lt;/p&gt;
+&lt;p&gt;npm 패키지를 개발하는 경우 패키지를 npm에 publish하지 않고 이 패키지를 디펜던시로 import 해서 사용하고 있는 프로젝트에서 테스트해보고싶을 때 어떻게 해야할까?&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;yalc&lt;/code&gt;가 해결방법이 될 수 있다.&lt;br&gt;
+yalc는 로컬 디펜던시를 로컬 저장소에 게시하고 종속 프로젝트에서 사용할 수 있도록 한다.&lt;/p&gt;
+&lt;p&gt;그럼 yalc를 사용해보도록 하자.&lt;br&gt;
+npm 패키지를 package a라고 하고, package a를 import해서 사용하는 package b가 있다고 가정하고 진행해보도록 하자.&lt;/p&gt;
+&lt;h2&gt;yalc 글로벌로 설치하기&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[package a] $ pnpm i -g yalc&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/3056f1a4-8aa2-4161-98f1-853d78540fdd/image.png&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;yalc publish&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[package a] $ yalc publish&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/391d892c-6df2-41c6-ae43-ed3c04bf2e7c/image.png&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;yalc add&lt;/h2&gt;
+&lt;p&gt;해당 패키지를 디펜던시로 가지고 있는 프로젝트에서 yalc add&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[package b] $ yalc add package-a&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/0286562e-0e2f-41ee-bc70-7069383c4688/image.png&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;dependency install&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[package b] $ pnpm i
+
+OR
+
+[package b] $ npm i
+
+OR
+
+[package b] $ yarn&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/304b2e70-d62b-4626-b61a-d76e399a31cd/image.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;package b의 package.json을 확인해보면, package a의 경로가 변경된 것을 확인할 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/6439fb1e-c31e-45d6-af66-376cdf6fef1b/image.png&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;변경사항을 만든다.&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;@core-monorepo/vue&lt;/code&gt; 패키지의 &lt;code class=&quot;language-text&quot;&gt;Today.vue&lt;/code&gt; 컴포넌트의 색을 blue에서 red로 변경해보았다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/cc566e6f-6166-431a-8e1a-605e29c2aeca/image.png&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;yalc push&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[package a] $ yalc push --sig&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/b7eebfe6-4ddc-470c-ac13-1f0a24686291/image.png&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;--sig&lt;/h3&gt;
+&lt;p&gt;해시 서명을 패키지 버전에 사용하는 옵션.&lt;br&gt;
+서명 사용 시에 변경된 파일에 대해 빠르게 감지 가능.&lt;br&gt;
+파일 내용이 변경되면 서명도 변경되기 때문에 패키지 버전간의 차이를 더 쉽게 파악 가능.&lt;br&gt;
+→ 버전 간의 변경 추적시에 도움이 된다.&lt;/p&gt;
+&lt;h2&gt;yalc update&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;[package b] $ yalc update package-a&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/1cbf7a93-0e53-4d80-ad35-6da58ea6b0ff/image.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;확인해보면, npm publish 를 하지 않아도 변경사항이 반영된 것을 확인할 수 있다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://velog.velcdn.com/images/nsunny0908/post/79028ebb-adcb-4b70-abce-5c06825948a2/image.png&quot;&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[nx로 모노레포 구축하기 (삽질기록)]]></title><description><![CDATA[nx로 모노레포를 구축해볼 수 있는 기회가 있어서 해보았다. 정보를 얻기 위해서는 적절하지 않은 글이며, 내가 어떤 삽질을 했는지에 대한 회고에 가까운 글이다. 모노레포를 구축하게 된 계기 vue…]]></description><link>https://kimnamsun.github.io/contents/posts/2023-10-09/</link><guid isPermaLink="false">https://kimnamsun.github.io/contents/posts/2023-10-09/</guid><pubDate>Mon, 09 Oct 2023 00:00:00 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;nx로 모노레포를 구축해볼 수 있는 기회가 있어서 해보았다. 정보를 얻기 위해서는 적절하지 않은 글이며, 내가 어떤 삽질을 했는지에 대한 회고에 가까운 글이다.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h2&gt;모노레포를 구축하게 된 계기&lt;/h2&gt;
